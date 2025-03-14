@@ -1,7 +1,7 @@
 import os
 from flask import Flask, jsonify
 from flask_cors import CORS         # this allows your frontend to access the backend
-from dice_logic import roll_dice    # Import the function from the module
+from backend.dice_logic import roll_dice    # Import the function from the module
 
 app = Flask(__name__)
 CORS(app)           # Enable CORS for frontend communication
