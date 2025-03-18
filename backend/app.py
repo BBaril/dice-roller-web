@@ -8,7 +8,7 @@ CORS(app)           # Enable CORS for frontend communication
 
 @app.route('/')
 def home():
-    return "Welcome to the Dice Roller API!"
+    return jsonify({"message": "Welcome to the Dice Roller API!"})  # Now returns JSON
 
 @app.route('/roll', methods=['GET'])
 def roll():
